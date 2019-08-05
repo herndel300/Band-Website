@@ -1,0 +1,28 @@
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+  background-image: url("blackhole3.jpg");
+  background-position: 90% 100%;
+  background-size: 2600px 2600px;
+	background-repeat: repeat;
+	background-color: black;
+	margin: 0px -12.5%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#nav ul{
+	position: fixed;
+	top: 0px;
+}
+
+#showsTable{
+  position: absolute;
+  color: white;
+	top: 200px;
+	left: 0px;
+	z-index: 1;
+}

@@ -1,0 +1,275 @@
+/*img:hover{
+	-moz-box-shadow: 0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px #ccc;
+}*/
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+  background-image: url("blackhole3.jpg");
+  background-position: 89% 37%;
+  background-size: 2600px 2600px;
+	background-repeat: repeat;
+	background-color: black;
+	margin: 0px -12.5%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
+
+/*.sliding {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 6px;
+}
+.sliding:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 5px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding:hover:after {
+	width: 100%;
+	background: red;
+}*/
+@font-face {
+  font-family: 'navigationFont';
+  src: url("Misc/Fonts/font.ttf");
+}
+
+@font-face{
+	font-family: 'articleFont';
+	src: url("Misc/Fonts/SouthbankLT.otf");
+}
+
+@font-face{
+	font-family: 'contentFont';
+	src: url("Misc/Fonts/Sansation_Light.ttf");
+}
+
+#background2{
+  position: absolute;
+  top: 850px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+#facebook{
+  position: absolute;
+  top: 650px;
+  left: 670px;
+}
+
+#twitter{
+  position: absolute;
+  top: 650px;
+  left: 770px;
+}
+
+#instagram{
+  position: absolute;
+  top: 650px;
+  left: 870px;
+}
+
+#youtube{
+	position: absolute;
+  top: 650px;
+  left: 970px;
+}
+
+#spotify{
+	position: absolute;
+  top: 650px;
+  left: 1070px;
+}
+
+#apple{
+	position: absolute;
+  top: 650px;
+  left: 1170px
+}
+/* ul through .active is  navigation bar */
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 485px;
+		padding-top: 18px;
+		padding-bottom: 18px;
+    overflow: hidden;
+    width: 59%;
+    background-image: url("Navigation Gradient.jpg");
+    background-repeat: no-repeat;
+    /*background: red; /* For browsers that do not support gradients */
+    /*background: -webkit-linear-gradient(black, grey);
+    background: -o-linear-gradient(black, grey);
+    background: -moz-linear-gradient(black, grey);
+    background: linear-gradient(black, grey);*/
+    position: absolute;
+    top: 850px;
+    left: -10px;
+    letter-spacing: 4px;
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+}
+
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    font-family: navigationFont;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+		-webkit-transition:200ms ease;
+    -moz-transition:200ms ease;
+    -o-transition:200ms ease;
+    transition:200ms ease;
+
+}
+
+#nav li a:hover{
+	  color: red;
+		visibility:visible;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+#nav.active {
+    color: red;
+}
+
+h1.header{
+	font-family: articleFont;
+	font-size: 245%;
+	color: white;
+  opacity: 1.0;
+	border-bottom: #D6CCCA;
+  text-indent: 20px;
+  z-index: 1;
+}
+
+
+p.articles{
+  font-family: contentFont;
+  font-size: 95%;
+  font-weight: bold;
+  opacity: 1.0;
+  color: #D6CCCA;
+  text-indent: 20px;
+  z-index: 1;
+}
+
+/*creates spacing for read more button */
+p.lastSentence{
+  font-family: contentFont;
+  font-size: 95%;
+  font-weight: bold;
+  opacity: 1.0;
+  color: #D6CCCA;
+  text-indent: 20px;
+  z-index: 1;
+  padding-bottom: 30%;
+}
+
+/* date of articles */
+span.dateStyle{
+	font-family: contentFont;
+	font-size: 40%;
+  font-weight: bold;
+  opacity: 1.0;
+	color: #D6CCCA;
+	text-align: right;
+  z-index: 1;
+}
+
+#article1{
+	position: absolute;
+	top: 1000px;
+	left: 300px;
+  margin: 30px;
+  background-color: rgba(0,0,0,0.37);
+  filter: alpha(opacity=90);
+}
+
+#youtube1{
+  position: absolute;
+  top: 280px;
+  left: 15px;
+  z-index: 1;
+}
+
+#article2{
+  position: absolute;
+	top: 1000px;
+	left: 860px;
+  margin: 30px;
+  background-color: rgba(0,0,0,0.37);
+  filter: alpha(opacity=90);
+}
+
+#article2Photo{
+  position: absolute;
+  top: 280px;
+  padding-left: 4%
+}
+
+/* instagram plugin */
+#instagramFeed
+{
+	position: absolute;
+	top: 1590px;
+	left: 1615px;
+  z-index: 1;
+}
+
+#instagramFeed h1{
+  font-family: articleFont;
+  font-size:200%;
+  color: white;
+  text-align: center;
+}
+
+/* facebook plugin */
+#faceBookFeed{
+	position: absolute;
+	top: 1950px;
+	left: 1615px;
+  z-index: 1;
+}
+
+#faceBookFeed h1{
+  font-family: articleFont;
+  font-size:200%;
+  color: white;
+  text-align: center;
+}
+
+#twitterFeed{
+  position: absolute;
+  top: 990px;
+  left: 1615px;
+  z-index: 1;
+}
+
+#twitterFeed h1{
+  font-family: articleFont;
+  font-size:200%;
+  color: white;
+  text-align: center;
+}
